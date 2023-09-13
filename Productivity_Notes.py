@@ -7,6 +7,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 from heapq import nlargest
+import os
 
 # nltk.download('punkt') <-- Need this to run the program, but only need to download punkt once
 # nltk.download('stopwords') <-- Need this to run the program, but only need to download stopwords once
@@ -102,7 +103,7 @@ def back_to_home():
     app.destroy()
     
     # Open the homepage again
-    os.system("Productivity_Home.py")  # Assuming your homepage script is named "homepage.py"
+    os.system("python Productivity_Home.py")  # Assuming your homepage script is named "homepage.py"
 
 # Create the main application window
 app = tk.Tk()
